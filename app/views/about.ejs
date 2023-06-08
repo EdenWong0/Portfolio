@@ -1,0 +1,45 @@
+<!--
+    File name:about.ejs
+    Student Name: Pak Hin Wong
+    ID: 301224021
+    Date: June 08, 2023
+-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class=”container”>
+    <div class=”jumbotron”>
+    
+    <style>
+    div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .myself {
+      width: 200px; /* Adjust the width as desired */
+      height: 200px; /* Automatically adjust the height based on the width */
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+    </style>
+        <h1 class=”display-4”>Welcome to <%= title %> page</h1>
+        <img src="/img/myself.jpeg" alt="myself" class="myself">
+        <br>
+        <strong>| THIS IS TALKING ABOUT ME |</strong> <br>
+        <a href="/img/resume.pdf">Click here to view my Resume!</a>
+        <td>My name is Eden Wong. I am from Hong Kong. I'm a student at Cnetennial College.<br>          
+            I am studying Software Engineer Technician and this is my third semester <br>
+            I am incredibly passionate about being a software engineer. The world of technology and software development fascinates me, and I find joy in creating innovative solutions to complex problems.<br>
+            During my leisure time, I like watching football and snooker. My favourite team is Chelsea.
+         </td>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

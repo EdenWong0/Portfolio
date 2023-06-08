@@ -1,0 +1,46 @@
+<!--
+    File name:services.ejs
+    Student Name: Pak Hin Wong
+    ID: 301224021
+    Date: June 08, 2023
+-->
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class=”container”>
+    <div class=”jumbotron”>
+        <style>
+            div {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              margin: 0;
+              padding: 0;
+            }
+            .web, .mobile, .database, .cyber {
+                width: 150px; /* Adjust the width as desired */
+                height: 150px; /* Automatically adjust the height based on the width */
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+          </style>
+        <h1 class=”display-4”>Welcome to <%= title %> page</h1>
+        <h2><strong>Software Development</strong></h2>
+        <p>By creating platforms that live up to your ambitions, we allow your business to improve its efficiency and offer your customers a more targeted experience.</p>
+        <p>
+            <img src="/img/web.png" => |Web development|
+            <br>
+            <img src="/img/database.jpg"  => |Server and Database|
+            <img src="/img/cyber.png"  => |Cyber Security|
+            <br>
+            <img src="/img/mobile.jpg"  => |Mobile development|
+        </p>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
