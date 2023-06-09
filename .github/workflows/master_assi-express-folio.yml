@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'assi-express-folio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BF8B0A4D0255410E82BADBD351A06F9F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E2E5F996A33345D796EBDE8D2C6A120E }}
           package: .
